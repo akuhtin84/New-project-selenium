@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>Anton</groupId>
-	<artifactId>New-project-selenium</artifactId>
+	<artifactId>New-project</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
@@ -94,62 +94,18 @@
 			<id>local</id>
 			<properties>
 				<env>local</env>
-				<user.username></user.username>
-				<user.password></user.password>
-				<grid2.hub></grid2.hub>
-				<site.url></site.url>
-				<browser.name></browser.name>
-				<browser.version></browser.version>
-				<browser.platform></browser.platform>
+				<user.username>user</user.username>
+				<user.password>user</user.password>
+				<grid2.hub>http://locahost:4444/wd/hub</grid2.hub>
+				<site.url>localhost:8080/gax</site.url>
+				<browser.name>firefox</browser.name>
+				<browser.version>stable</browser.version>
+				<browser.platform>stable</browser.platform>
 			</properties>
 			<activation>
 				<activeByDefault>true</activeByDefault>
 			</activation>
 		</profile>
-		<profile>
-			<id>dev</id>
-			<properties>
-				<env>dev</env>
-				<user.username></user.username>
-				<user.password></user.password>
-				<grid2.hub></grid2.hub>
-				<site.url></site.url>
-				<browser.name></browser.name>
-				<browser.version></browser.version>
-				<browser.platform></browser.platform>
-			</properties>
-		</profile>
-		<profile>
-			<id>test</id>
-			<properties>
-				<env>test</env>
-				<user.username></user.username>
-				<user.password></user.password>
-				<grid2.hub></grid2.hub>
-				<site.url></site.url>
-				<browser.name></browser.name>
-				<browser.version></browser.version>
-				<browser.platform></browser.platform>
-			</properties>
-		</profile>
-		<profile>
-			<id>prod</id>
-			<properties>
-				<env>prod</env>
-				<user.username></user.username>
-				<user.password></user.password>
-				<grid2.hub></grid2.hub>
-				<site.url></site.url>
-				<browser.name></browser.name>
-				<browser.version></browser.version>
-				<browser.platform></browser.platform>
-			</properties>
-		</profile>
-		<profile>
-			<id>force-local-driver</id>
-			<properties>
-				<grid2.hub></grid2.hub>
-			</properties>
-		</profile>
 	</profiles>
+
 </project>

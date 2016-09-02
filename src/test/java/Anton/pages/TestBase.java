@@ -4,6 +4,9 @@ import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import Anton.util.Browser;
+import Anton.util.PropertyLoader;
+import Anton.webdriver.WebDriverFactory;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -15,9 +18,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 
-import Anton.util.PropertyLoader;
-import Anton.util.Browser;
-import Anton.webdriver.WebDriverFactory;
+
 
 /*
  * Base class for all the test classes
